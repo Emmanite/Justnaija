@@ -4,59 +4,409 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>project 1 Using Css grid</title>
-    <style>
-        body{
-           color: #fff;
-           font-family: 'numito Semibody';
-           text-align: center;
- }
- #content{
-     display: grid;
-     grid-template-columns: repeat(12, 1fr);
-     grid-auto-rows: minmax(100px, auto);
-     grid-gap: 10px;
-     max-width:960px;
-     margin: 0 auto;
-     
- }
- #content>*{
-     background:#3bbced;
-     padding: 30px;
-}
-  header{
-      grid-column: 1/13;
-}
-main{
-    grid-column: 4/13;
-    grid-row:2/4;
-}
-aside{
-    grid-column: 1/4;
-}
-section{
-    grid-column: 1/13;
-    grid-row: 4/6;
-}
-nav{
-    grid-column: 1/4;
-}
-footer{
-    grid-column: 1/13;
-}
-
-  </style>
+    <title>Just Naija</title>
+    <link rel="shortcut icon" href="images/logohead.png" type="image/x-icon">
+    <link rel="stylesheet" href="just/style.css">
+    <link rel="stylesheet" href="just/css/bootstrap.min.css">
+    <link rel="stylesheet" href="just/fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="just/css/bootstrap.css">
+    <link rel="stylesheet" href="ccs/owl.carousel.min.css">
+    <link rel="stylesheet" href="ccs/owl.theme.default.min.css">
 </head>
 <body>
-   
-    <div id="content">
-        
-        <header>Header</header>
-        <main>Main</main>
-        <section>Section</section>
-        <aside>Aside</aside>
-        <nav>Nav</nav>
-        <footer>Footer</Footer>
-    </div>
+       <!-- hearder -->
+       <header>
+            <div class="heading-top">
+                    <div class="container ">
+                            <div class="row d-flex float-right text-white" >
+                              <div class="col-sm ">
+                                 <span class="px-1">
+                                    <i class="fas fa-rss text-warning"></i>
+                                       <span >rss</span>
+                                 </span>     
+                                <i class="fa fa-envelope"></i>
+                                <span > emmanitebest@gmail.com</span>
+                            
+                                <span class="px-1 text-success">
+                                      <i class="fab fa-whatsapp"> </i>
+                                      <span> 07063781702</span>
+                                </span>
+                                <span class="px-1 text-info">
+                                     <i class="fab fa-facebook  "></i>
+                                     <span > facebook</span>
+                                </span>
+                                <span class="px-1 text-info">
+                                    <i class="fab fa-twitter"></i>
+                                     <span > twitter</span>
+                                </span>
+                                <span class="px-1 text-primary">
+                                     <i class="fab fa-instagram"></i>
+                                     <span > Instagram</span>
+                                </span>
+                                <span class="px-1 text-danger">
+                                        <i class="fab fa-youtube"></i>
+                                        <span > youtube</span>
+                                   </span>
+                               </div>
+                           </div>
+                        </div>
+                </div>
+                <!-- nav bar -->
+                <div class="navbar-menu ">
+                        <div class="container">
+                            <div class="row">
+                                 <div class="col">
+                                     <div class="logo navbar-brand">
+                                         <h2 class="text-white"> <img src="images/logo.png"></h2>
+                                     </div>
+                                 </div>
+                                  <div class="col ">
+                                  <nav class="navbar navbar-expand-lg navbar-dark menu">
+                                                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                                   <span class="navbar-toggler-icon"></span>
+                                                 </button>
+                                                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                                   <ul class="navbar-nav">
+                                                     <li class="nav-item active">
+                                                       <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                                                     </li>
+                                                     <li class="nav-item active">
+                                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                              FORUM
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                              <a class="dropdown-item" href="#">General</a>
+                                                              <a class="dropdown-item" href="#">News</a>
+                                                              <a class="dropdown-item" href="#">LYRICS</a>
+                                                    </li>
+                                                        <li class="nav-item active">
+                                                            <a class="nav-link" href="#">VIDEO <span class="sr-only"></span></a>
+                                                        </li>
+                                                        <li class="nav-item active">
+                                                                <a class="nav-link" href="#">MUSIC <span class="sr-only"></span></a>
+                                                        </li>
+                                                        <li class="nav-item active">
+                                                                <a class="nav-link" href="#">ALBUMS <span class="sr-only"></span></a>
+                                                        </li>
+                                                        <li class="nav-item active">
+                                                                <a class="nav-link" href="#">ARTISTES <span class="sr-only"></span></a>
+                                                        </li>
+                                                        <li class="nav-item active">
+                                                                <a class="nav-link" href="#">CONTACT <span class="sr-only"></span></a>
+                                                        </li>
+                                                    </div>
+                                                     <form class="form-inline my-2 my-lg-2">
+                                                     <i class="fa fa-search text-white"></i>
+                                                   </form>
+                                                   </ul>
+                                                 </div>
+                                               </nav>
+                                 </div>
+                            </div>
+                        </div>
+                  </div>
+                 </header>
+                 <!-- content -->
+                
+                    <div class="contanier col-12">
+                        <div class="row">
+                                <div class="col ">
+                                        <div class=" owl-carousel owl-theme">
+                                            <div class="single-brand">
+                                               <img src="images/logo1.jpg"  alt="brand image">
+                                            </div>
+                                            <div class="single-brand ">
+                                                  <img src="images/logo2.jpg" alt="brand image">
+                                            </div>
+                                            <div class="single-brand">
+                                                  <img src="images/logo3.jpg" alt="brand image">
+                                            </div>
+                                            
+                                            <div class="single-brand">
+                                                  <img src="images/logo3.jpg" alt="brand image">
+                                            </div>
+                                            <div class="single-brand">
+                                                <img src="images/logo1.jpg" alt="brand image">
+                                           </div>
+                                           <div class="single-brand">
+                                            <img src="images/logo2.jpg" alt="brand image">
+                                           </div>
+                                           <div class="single-brand">
+                                                <img src="images/logo3.jpg" alt="brand image">
+                                           </div>
+                                        </div> 
+                                    </div> 
+                                </div>
+                    </div>
+              <!--head paragraph -->
+              <h1 class="head paragraph"></h1>
+                  <div class="container-fluid latest">
+                     <div class="row">
+                        <div class="col-sm-12 text-white ">
+                               <p><strong>Latest Naija Music & Nigerian Videos</strong> </p>
+                       </div>
+                     </div>
+                  </div>
+                 <!-- main section -->
+                 <section class="parallax">
+                 </section>
+     <main>
+            <div style="height:2000px;background-color:gray;font-size:36px">
+                <div class="container">
+                  <div class="row">
+                   <div class="col-8">
+                  <div class="card-deck">
+                     <div class="card card-space my-10px mx-10">
+                              <img src="images/Moses.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">moses</h5>   
+                           </div>
+                      </div>
+                     <div class="card card-space">
+                      <img src="images/olamida1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                      <h5 class="card-title">Olamida</h5>   
+                       </div>
+                     </div>
+                </div>
+                  <div class="card-deck">
+                          <div class="card">
+                             <img src="images/Moses.jpg" class="card-img-top" alt="...">
+                             <div class="card-body">
+                             <h5 class="card-title text-center">moses</h5>   
+                             </div>
+                        </div>
+                         <div class="card">
+                          <img src="images/olamida1.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                          <h5 class="card-title">Olamida</h5>      
+                        </div>
+                     </div>
+                   </div>
+                   <div class="card-deck">
+                     <div class="card">
+                        <img src="images/Moses.jpg" class="card-img-top" alt="...">
+                       <div class="card-body">
+                         <h5 class="card-title text-center">moses</h5>   
+                       </div>
+                     </div>
+                      <div class="card">
+                            <img src="images/olamida1.jpg" class="card-img-top" alt="...">
+                         <div class="card-body">
+                           <h5 class="card-title">Olamida</h5>
+                        </div>
+                  </div>
+                </div>
+                <div class="card-deck">
+                  <div class="card">
+                     <img src="images/Rema.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Rema</h5>   
+                    </div>
+                  </div>
+                   <div class="card">
+                         <img src="images/Rema.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Rema</h5>
+                     </div>
+               </div>
+             </div>
+             </div>
+                   <div class="col-4">
+                      <div class="card bg-light mb-3" style="max-width: 30rem;">
+                          <div class="Card-header popular text-white">
+                              Popular Artists
+                        </div>
+                         <div class="card-body"> 
+                           <button type="button" class="btn btn-primary btn-md">Fireboy DML</button>
+                           <button type="button" class="btn btn-primary btn-sm">Rema</button>
+                           <button type="button" class="btn btn-primary btn-sm">Naira Marley</button>
+                           <button type="button" class="btn btn-primary btn-md">Joeboy</button>
+                           <button type="button" class="btn btn-primary btn-sm">Davido</button>
+                           <button type="button" class="btn btn-primary btn-sm"> Burna Boy</button>
+                           <button type="button" class="btn btn-primary btn-sm">Wizkid</button>
+                           <button type="button" class="btn btn-primary btn-sm">Teni</button>
+                           <button type="button" class="btn btn-primary btn-md">phyno</button>
+                           <button type="button" class="btn btn-primary btn-sm">kiss Daniel</button>
+                           <button type="button" class="btn btn-primary btn-sm">Cariso</button>
+                           <button type="button" class="btn btn-primary btn-sm">Mohbad</button>
+                           <button type="button" class="btn btn-primary btn-md">Erigga</button>
+                         </div>
+                      </div>
+                      <div class="card  mb-3" style="max-width: 25rem;">
+                          <div class="Card-header Advertisements text-white">
+                             Advertisements
+                          </div>
+                        <div class="card-body text-primary">
+                          <p class="card-text"> display ad. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                      <div class="card  mb-3" style="max-width: 25rem;">
+                        <div class="Card-header Trending text-white">
+                           Trending this week
+                     </div>
+                      <div class="card-body text-primary">
+                        <p class="card-text"> display ad. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    <div class="card  mb-3" style="max-width: 25rem;">
+                      <div class="Card-header Recent text-white">
+                         Recent
+                    </div>
+                    <div class="card-body text-primary">
+                      <p class="card-text"> display ad. Some quick example text to build on the</p>
+                    </div>
+                  </div>    
+                
+                  <div class="card  mb-3" style="max-width: 25rem;">
+                      <div class="Card-header button text-white">
+                       <button type="button" class="btn btn-outline-secondary">Primary</button>
+                       <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                       <button type="button" class="btn btn-outline btn-dark">Primary</button>
+                      </div>
+                       <div class="d-flex">
+                        <img src="./images/Moses.jpg" width="40px" alt="">
+                        <p>Moses</p>
+                      </div>
+                      <div class="d-flex">
+                        <img src="./images/Moses.jpg" width="40px" alt="">
+                        <p> Moses pop</p>
+                      </div>
+                  </div>
+                  <div class="card  mb-3" style="max-width: 25rem;">
+                    <div class="Card-header Recent text-white text-center">
+                         Popular Search
+                    </div>
+                    <div>
+                     <ul>
+                        <li class="rema">
+                          <a href="search/rema" class="rema-link text-white" rel="">Rema</a>
+                           <span class="rema-like">1.3k</span>
+                        </li>
+                     </ul>
+                  </div>
+                  
+                </div>
+                  </div>
+                  
+                    </body>
+                  </div>  
+                </div>
+                <!-- Footer -->
+                <div class="container-fluid container-footer bg-dark">
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-3 py-5">
+                            <h2 class="text-light">Categories</h2>
+                            <div class="col-10 footer-links text-white"> 
+                                <label for="checkbox">
+                                 <input type="checkbox">
+                                 <span><a href="search/General" class=" text-white" rel="">General</a><span>
+                                </label>
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span><a href="search/News" class=" text-white" rel="">News</a></span>
+                                </label>
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>Lyrics</span>
+                                 </label>
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>Recent Post</span>
+                                </label>
+                                
+                            </div>
+                        </div>
+                        <div class="col-3 py-5">
+                            <h2 class="text-white">Videos</h2>
+                            <div class="col-10 footer-links text-white">
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>Naija Music Videos </span>
+                                </label>
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>Naija Comedy Videos </span>
+                                </label>
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>Naija Prank Videos </span>
+                                </label>
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>Football Highlights Videos </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-3 py-5">
+                            <h2 class="text-white">Music</h2>
+                            <div class="col-10 footer-links text-white">
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>Nigerian Music</span>
+                                </label>
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>Gosple songs</span>
+                                </label>
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>Throwback songs</span>
+                                </label>
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>Ghana Music</span>
+                                </label>
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>DJ Mixtapes</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-3 py-5">
+                            <h2 class="text-white">Meta</h2>
+                            <div class="col-10 footer-links text-white">
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>Invite Your friends</span>
+                                </label>
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>Contact us</span>
+                                </label>
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>About us</span>
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>Privacy policy</span>
+                                </label></label>
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>Advertises</span>
+                                </label>
+                                <label for="checkbox">
+                                <input type="checkbox">
+                                <span>Promote</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+           
+        </div>
+       
+  </main>
 </body>
+<script src="js/jquery.2.3.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/app.js"></script>
+<script src="just/jquery/jquery.min.js"></script>
+<script src="just/js/bootstrap.min.js"></script>
+<script src="just/fontawesome-free-5.15.1-web/js/all.js"></script>
 </html>
